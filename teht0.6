@@ -1,0 +1,10 @@
+kayttaja->selain:
+note left of selain
+kayttaja lisää muistion lomakkeella
+selain lisää muistion luetteloon ja tekee
+ajax kutsun palvelimelle muistion lisäämiseksi
+end note
+selain->palvelin: POST fullstack-exampleapp.herokuapp.com/new_note_spa
+note left of palvelin: palvelin tallentaa muistion
+palvelin->selain: status 201
+
